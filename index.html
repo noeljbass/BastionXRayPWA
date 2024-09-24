@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Bastion X-Ray | Paywall Article Bypass</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		
+		<!-- Meta Tags for SEO and Social Media -->
+		<meta name="description" content="Bastion X-Ray: Unlock articles blocked by paywalls with ease. Paste the article URL and access the content you want to read." />
+		<meta name="keywords" content="paywall, article unlocker, read articles, bypass paywalls, Bastion X-Ray" />
+		<meta name="author" content="BastionTech" />
+
+		 <!-- Favicon -->
+		 <link rel="icon" href="favicon.ico" type="image/x-icon" />
+		 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+		
+		<!-- Open Graph Meta Tags for Social Media -->
+		<meta property="og:title" content="Bastion X-Ray" />
+		<meta property="og:description" content="Unlock articles blocked by paywalls. Paste the article URL and access the content you want to read." />
+		<meta property="og:image" content="images/logo.png" />
+		<meta property="og:url" content="http://xray.bastiontech.org" />
+		<meta property="og:type" content="website" />
+	
+		<!-- Twitter Card Meta Tags -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="Bastion X-Ray" />
+		<meta name="twitter:description" content="Unlock articles blocked by paywalls. Paste the article URL and access the content you want to read." />
+		<meta name="twitter:image" content="images/logo.png" />
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/site.webmanifest">
+	
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<script>
+			function handleSubmit(event) {
+				event.preventDefault(); 
+	
+				const inputField = document.getElementById('text');
+				const articleUrl = inputField.value;
+	
+				const archiveUrl = "https://web.archive.org/save/" + articleUrl;
+	
+				window.open(archiveUrl, '_blank');
+			}
+		</script>
+	</head>
+<body class="is-preload">
+
+    <!-- Header -->
+    <header id="header">
+        <img src="images/logo.png" width="50%">
+        <h1>Bastion X-Ray</h1>
+        <p>Unlock articles blocked by paywalls. The new article will take a few moments to load so please be patient.</p>
+    </header>
+
+    <!-- Signup Form -->
+    <form id="signup-form" method="post" action="#" onsubmit="handleSubmit(event)">
+        <input type="text" name="text" id="text" placeholder="Paste Article URL" required />
+        <input type="submit" value="Unlock Article" /><br><br>
+        <p>Designed by: <a href="http://bastiontech.org" target="_blank">BastionTech</a></p>
+    </form>
+
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>
